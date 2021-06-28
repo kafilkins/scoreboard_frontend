@@ -1,8 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import{ connect } from 'react-redux';
+import { connect } from 'react-redux';
 import TeamsContainer from './containers/TeamsContainer';
+import RostersContainer from './containers/RostersContainer';
+import NewsContainer from './containers/NewsContainer';
+import ScoresContainer from './containers/ScoresContainer';
+import StandingsContainer from './containers/StandingsContainer';
 
 class App extends React.Component {
 
@@ -10,6 +13,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <TeamsContainer />
+        <RostersContainer />
+        <NewsContainer />
+        <ScoresContainer />
+        <StandingsContainer />
       </div>
     );
   }
