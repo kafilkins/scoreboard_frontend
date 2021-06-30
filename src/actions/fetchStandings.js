@@ -4,4 +4,4 @@ export function fetchStandings() {
         .then(response => response.json())
         .then(standings => dispatch({ type: 'FETCH_STANDINGS', payload: standings }))
     };
-}
+} 

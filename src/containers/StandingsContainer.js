@@ -3,7 +3,7 @@ import Standings from '../components/Standings'
 import { connect } from 'react-redux';
 import { fetchStandings } from '../actions/fetchStandings';
 
-class StandingsContainer extends React.Components {
+class StandingsContainer extends React.Component {
 
     componentDidMount() {
         this.props.fetchStandings()
@@ -16,7 +16,7 @@ class StandingsContainer extends React.Components {
                 <Standings standings={this.props.standings}/>
             </div>
         )
-    }
+    } 
 }
 
 const mapStateToProps = state  => {

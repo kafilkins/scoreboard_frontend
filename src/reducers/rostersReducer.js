@@ -1,9 +1,12 @@
-export default function rostersReducer(state = {rosters: []}, action) {
+export default function rostersReducer(state = [], action) {
 
     switch(action.type) {
 
         case "FETCH_ROSTERS":
-            return {rosters: action.payload}
+            return [
+                ...state,
+                ...action.payload
+            ]
 
         default:
             return state

@@ -4,4 +4,4 @@ export function fetchNews() {
         .then(response => response.json())
         .then(news => dispatch({ type: 'FETCH_NEWS', payload: news }))
     };
-}
+} 

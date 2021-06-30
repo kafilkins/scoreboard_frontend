@@ -4,4 +4,4 @@ export function fetchScores() {
         .then(response => response.json())
         .then(scores => dispatch({ type: 'FETCH_SCORES', payload: scores }))
     };
-}
+} 

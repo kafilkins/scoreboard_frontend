@@ -1,12 +1,15 @@
 
-export default function scoresReducer(state = {scores: []}, action) {
+export default function scoresReducer(state = [], action) {
 
     switch(action.type) {
         
         case "FETCH_SCORES":
-            return {scores: action.payload}
+            return [
+                ...state,
+                ...action.payload
+            ]
 
     default:
         return state
     }
-}
+} 

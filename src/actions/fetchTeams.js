@@ -5,5 +5,5 @@ export function fetchTeams() {
         .then(response => response.json())
         .then(teams => dispatch({ type: 'FETCH_TEAMS', payload: teams }))
     };
-}
+} 
 

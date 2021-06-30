@@ -8,12 +8,14 @@ class TeamsContainer extends React.Component {
     componentDidMount() {
         this.props.fetchTeams()
     }
-
+ 
     render() {
-
+        console.log(this.props.teams)
         return(
             <div className="Teams">
+                <ul>
                 <Teams teams={this.props.teams}/>
+                </ul>
             </div>
         )
     }

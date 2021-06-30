@@ -3,7 +3,7 @@ import Scores from '../components/Scores'
 import { connect } from 'react-redux';
 import { fetchScores } from '../actions/fetchScores';
 
-class ScoresContainer extends React.Components {
+class ScoresContainer extends React.Component {
 
     componentDidMount() {
         this.props.fetchScores()
@@ -14,7 +14,7 @@ class ScoresContainer extends React.Components {
         return(
             <div className="Scores">
                 <Scores scores={this.props.scores}/>
-            </div>
+            </div> 
         )
     }
 }

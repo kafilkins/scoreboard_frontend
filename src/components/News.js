@@ -1,6 +1,10 @@
 import React from 'react';
 
 const News = (props) => {
+
+    if (!props.news)
+            return <p> Loading...</p>
+            else
     
     return (
         <div>
@@ -9,4 +13,4 @@ const News = (props) => {
     )
 }
 
-export default News
+export default News 

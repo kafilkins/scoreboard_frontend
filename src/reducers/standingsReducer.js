@@ -1,10 +1,11 @@
 
-export default function standingsReducer(state = {standings: []}, action) {
+export default function standingsReducer(state = [], action) {
 
     switch(action.type) {
         
         case "FETCH_STANDINGS":
-            return {standings: action.payload}
+            return [...state,
+                ...action.payload]
 
     default:
         return state

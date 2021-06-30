@@ -3,7 +3,7 @@ import News from '../components/News'
 import { connect } from 'react-redux';
 import { fetchNews } from '../actions/fetchNews';
 
-class NewsContainer extends React.Components {
+class NewsContainer extends React.Component {
 
     componentDidMount() {
         this.props.fetchNews()
@@ -25,4 +25,4 @@ const mapStateToProps = state  => {
     }
 }
 
-export default connect(mapStateToProps, {fetchNews})(NewsContainer);
+export default connect(mapStateToProps, {fetchNews})(NewsContainer); 

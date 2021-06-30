@@ -3,7 +3,7 @@ import Rosters from '../components/Rosters'
 import { connect } from 'react-redux';
 import { fetchRosters } from '../actions/fetchRosters';
 
-class RostersContainer extends React.Components {
+class RostersContainer extends React.Component {
 
     componentDidMount() {
         this.props.fetchRosters()
@@ -25,4 +25,4 @@ const mapStateToProps = state  => {
     }
 }
 
-export default connect(mapStateToProps, {fetchRosters})(RostersContainer);
+export default connect(mapStateToProps, {fetchRosters})(RostersContainer); 

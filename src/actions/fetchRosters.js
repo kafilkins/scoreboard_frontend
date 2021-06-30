@@ -4,4 +4,4 @@ export function fetchRosters() {
         .then(response => response.json())
         .then(rosters => dispatch({ type: 'FETCH_ROSTERS', payload: rosters }))
     };
-}
+} 

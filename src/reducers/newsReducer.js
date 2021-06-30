@@ -1,11 +1,14 @@
-export default function newsReducer(state = {news: []}, action) {
+export default function newsReducer(state = [], action) {
 
     switch(action.type) {
 
         case "FETCH_NEWS":
-            return {news: action.payload}
+            return [
+                ...state,
+                ...action.payload
+            ]
 
         default:
             return state
     }
-}
+}  

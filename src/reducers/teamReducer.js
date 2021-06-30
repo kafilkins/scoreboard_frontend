@@ -1,10 +1,12 @@
 
-export default function teamReducer(state = {teams: []}, action) {
+export default function teamReducer(state = [], action) {
 
     switch(action.type) {
         
         case "FETCH_TEAMS":
-            return {teams: action.payload}
+            return [
+                ...state, 
+                 ...action.payload]
 
     default:
         return state
