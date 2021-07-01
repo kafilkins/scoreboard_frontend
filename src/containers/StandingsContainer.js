@@ -10,7 +10,6 @@ class StandingsContainer extends React.Component {
     }
 
     render() {
-
         return(
             <div className="Standings">
                 <Standings standings={this.props.standings}/>
