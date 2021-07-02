@@ -5,12 +5,14 @@ import RostersContainer from './containers/RostersContainer';
 import NewsContainer from './containers/NewsContainer';
 import ScoresContainer from './containers/ScoresContainer';
 import StandingsContainer from './containers/StandingsContainer';
+import NavBar from './components/NavBar';
 
 class App extends React.Component {
 
   render() {
     return (
       <div className="App">
+      <NavBar/>  
       <RostersContainer />
       </div>
     );
