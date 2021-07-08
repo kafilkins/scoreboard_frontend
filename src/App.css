@@ -1,7 +1,6 @@
 .App {
   width: 100vw;
   height: 100vh;
-  
 }
 
 body {
@@ -10,28 +9,32 @@ body {
 }
 
 .NavBar {
-  height: 100%;
-  width: 250px;
-  background-color: grey;
+  height: 10%;
+  width: 100%;
+  background-color: #021E39;
+  display: flex;
+  justify-content: center;  
 }
 
 .NavBarList {
-  height: auto;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
   padding: 0;
-  width: 100%;
+  overflow: hidden;
 }
 
 .NavBarList .row {
-  width: 100%;
-  height: 50px;
-  border: 1px solid black;
-  list-style-type: none;
-  margin: 0%;
-  display: flex;
-  flex-direction: row;
-  color: yellow;
-  justify-content: center;
+  float: left;
+  flex: 100%;
+  display: inline;
+  padding: 5px;
+  text-align: center;
   align-items: center;
+  font-size: 25px;
+  color: white;
+  margin-left: 15px;
 }
 
 .NavBarList .row:hover {
@@ -47,9 +50,29 @@ body {
 .row #icon {
   flex: 30%;
   display: grid;
-  place-items: center
+  place-items: center;
 }
 
 .row #title {
   flex: 70%;
+  display: grid;
+  place-items: center;
+}
+
+.Footer {
+  position: fixed;
+  height: 10%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #021E39;
+  text-align: center;
+  align-items: inline;
+}
+
+.aboutLink {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-left: 15px;
 }

@@ -6,7 +6,7 @@ import NewsContainer from './containers/NewsContainer';
 import ScoresContainer from './containers/ScoresContainer';
 import StandingsContainer from './containers/StandingsContainer';
 import NavBar from './components/NavBar';
-//import { Navbar } from 'react-bootstrap';
+import { Route } from 'react-router-dom';
 
 class App extends React.Component {
 
@@ -14,7 +14,8 @@ class App extends React.Component {
     return (
       <div className="App">  
       <NavBar/>,
-      <TeamsContainer />
+      <Route path="/teams" component={TeamsContainer} />
+      <Route path="/news" component={NewsContainer} />
       </div>
     );
   }

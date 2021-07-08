@@ -7,8 +7,15 @@ const News = (props) => {
             else
     
     return (
-        <div>
-            {props.news.map(info => <li key={info.id}>{info.title}</li> )}
+        <div className="news">
+            {props.news.map((info, key) => {
+                return (
+                    <body>
+                        <h2 className="newsTitle"> {info.title} </h2>
+                        <p className="newsText"> {info.content} </p> 
+                    </body>
+                )
+            })}
         </div>
     )
 }

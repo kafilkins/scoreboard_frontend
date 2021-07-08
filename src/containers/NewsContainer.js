@@ -6,7 +6,7 @@ import { fetchNews } from '../actions/fetchNews';
 class NewsContainer extends React.Component {
 
     componentDidMount() {
-        this.props.fetchNews()
+        this.props.fetchNews() 
     }
 
     render() {

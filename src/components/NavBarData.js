@@ -1,31 +1,38 @@
  import React from 'react' 
  import SportsBaseballIcon from '@material-ui/icons/SportsBaseball';
  import ScoreIcon from '@material-ui/icons/Score';
- import InfoIcon from '@material-ui/icons/Info';
  import ShowChartIcon from '@material-ui/icons/ShowChart';
- import TeamsContainer from '../containers/TeamsContainer';
- import { Link } from 'react-router-dom';
+ import HomeIcon from '@material-ui/icons/Home';
+ import InfoIcon from '@material-ui/icons/Info';
+ 
 
  export const NavBarData = [
      {
+        title:"Home",
+        icon: <HomeIcon/>,
+        link: '/news'
+     },
+     {
          title: "Teams",
          icon: <SportsBaseballIcon/>,
-         link: <Link to={TeamsContainer}></Link>
+         link: '/teams'
      },
      {
         title: "Scores",
         icon: <ScoreIcon/>,
-        link: ""
-    },
-    {
-        title: "News",
-        icon: <InfoIcon/>,
-        link: ""
+        link: "/scores"
     },
     {
         title: "Standing",
         icon: <ShowChartIcon/>,
-        link: ""
+        link: "/standing"
     }
 
+ ]
+ export const FooterData = [
+     {
+         title: "About",
+         icon: <InfoIcon/>,
+         link: '/about'
+     }
  ]

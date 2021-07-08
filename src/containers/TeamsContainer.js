@@ -10,7 +10,6 @@ class TeamsContainer extends React.Component {
     }
  
     render() {
-        console.log(this.props.teams)
         return(
             <div className="Teams">
                 <ul>

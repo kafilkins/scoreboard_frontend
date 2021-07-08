@@ -6,12 +6,12 @@ const Teams = (props) => {
      }
 
      return (
-         <div class="container">
-            <div class="row">
-                <div class="col-12">
+         <div className="teams_container">
+            <div className="row">
+                <div className="col-12">
                     {props.teams.map(team => <img src={team.logo} alt={team.city} width="200" height="200"></img> )}
                     </div>
-                <div class="w-100"></div>
+                <div className="w-100"></div>
             </div>
         </div>
      )  
