@@ -13,9 +13,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">  
-      <NavBar/>,
+      <NavBar/>
       <Route path="/teams" component={TeamsContainer} />
       <Route path="/news" component={NewsContainer} />
+      <Route path="/scores" component={ScoresContainer} />
       </div>
     );
   }

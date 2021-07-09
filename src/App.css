@@ -59,20 +59,72 @@ body {
   place-items: center;
 }
 
-.Footer {
+.footer {
   position: fixed;
+  display: flex;
   height: 10%;
-  left: 0;
+  left: 5px;
   bottom: 0;
   width: 100%;
   background-color: #021E39;
+  justify-content: center;
   text-align: center;
-  align-items: inline;
 }
 
-.aboutLink {
+.footerList {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.footerList .aboutLink {
   text-decoration: none;
+  display: center;
   color: white;
   font-size: 25px;
   margin-left: 15px;
+}
+
+.footerList .linkedInLogo {
+  float: left;
+  flex: 100%;
+  display: center;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.footerList .copyright {
+  float: left;
+  flex: 100%;
+  display: center;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: space-evenly;
+  justify-content: space-around;
+  grid-gap: 20px;
+  background-color: rgb(247, 240, 240);
+  padding: 10px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 20px;
 }

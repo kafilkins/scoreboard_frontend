@@ -20,6 +20,7 @@ class ScoresContainer extends React.Component {
 }
 
 const mapStateToProps = state  => {
+
     return {
         scores: state.scores
     }
