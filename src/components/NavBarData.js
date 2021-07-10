@@ -25,7 +25,7 @@
     {
         title: "Standing",
         icon: <ShowChartIcon/>,
-        link: "/standing"
+        link: "/standings"
     }
 
  ]

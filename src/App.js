@@ -7,6 +7,7 @@ import ScoresContainer from './containers/ScoresContainer';
 import StandingsContainer from './containers/StandingsContainer';
 import NavBar from './components/NavBar';
 import { Route } from 'react-router-dom';
+import Footer from './components/Footer';
 
 class App extends React.Component {
 
@@ -17,6 +18,8 @@ class App extends React.Component {
       <Route path="/teams" component={TeamsContainer} />
       <Route path="/news" component={NewsContainer} />
       <Route path="/scores" component={ScoresContainer} />
+      <Route path="/standings" component={StandingsContainer} />
+      <Footer/>
       </div>
     );
   }

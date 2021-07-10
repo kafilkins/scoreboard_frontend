@@ -6,8 +6,6 @@ const Scores = (props) => {
             return <p> Loading...</p>
             else
 
-            debugger
-    
     return (
         <div className="grid-container">
             {props.scores.map((score) => {

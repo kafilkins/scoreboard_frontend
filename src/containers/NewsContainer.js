@@ -12,9 +12,7 @@ class NewsContainer extends React.Component {
     render() {
 
         return(
-            <div className="News">
                 <News news={this.props.news}/>
-            </div>
         )
     }
 }

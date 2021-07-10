@@ -10,11 +10,11 @@ const News = (props) => {
         <div className="news">
             {props.news.map((info, key) => {
                 return (
-                    <body>
+                    <span className="news_body">
                         <h2 className="newsTitle"> {info.title} </h2>
-                        <p className="newsText"> {info.content} </p> 
-                    </body>
-                )
+                        <p className="newsText"> {info.content} </p>
+                    </span>                 
+                     )
             })}
         </div>
     )
