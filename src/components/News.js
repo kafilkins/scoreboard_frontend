@@ -10,7 +10,7 @@ const News = (props) => {
         <div className="news">
             {props.news.map((info, key) => {
                 return (
-                    <span className="news_body">
+                    <span className="newsBody">
                         <h2 className="newsTitle"> {info.title} </h2>
                         <p className="newsText"> {info.content} </p>
                     </span>                 

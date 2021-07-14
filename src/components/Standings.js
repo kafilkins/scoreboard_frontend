@@ -9,7 +9,7 @@ const Standings = (props) => {
     return (
         <div class="container">
             <table class="table table-striped">
-                <thead>
+                <thead className="thead">
                     <tr>
                         <th scope="col"> AL - Team</th>
                         <th scope="col"> Wins</th>
@@ -95,8 +95,8 @@ const Standings = (props) => {
                         <td key={props.standings[14].id}>{props.standings[14].wins}</td>
                         <td key={props.standings[14].id}>{props.standings[14].losses}</td>
                     </tr>
-                </tbody>
-                <thead>
+                </tbody><br></br>
+                <thead className="thead">
                     <tr>
                         <th scope="col"> NL - Team</th>
                         <th scope="col"> Wins</th>
