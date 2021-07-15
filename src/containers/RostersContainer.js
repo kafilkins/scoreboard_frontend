@@ -6,7 +6,8 @@ import { fetchRosters } from '../actions/fetchRosters';
 class RostersContainer extends React.Component {
 
     componentDidMount() {
-        this.props.fetchRosters()
+        const id = this.props.match.params.key
+        this.props.fetchRosters(id)
     }
 
     render() {

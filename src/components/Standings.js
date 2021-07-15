@@ -2,6 +2,8 @@ import React from 'react';
 
 const Standings = (props) => {
 
+    debugger
+
     if (props.standings && props.standings.length <= 0){
         return <div>LOADING</div>
      }
