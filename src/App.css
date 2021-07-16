@@ -108,28 +108,47 @@ body {
   margin-left: 15px;
 }
 
+.Scores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align-last: center;
+}
+
+.date-selector {
+  display: contents;
+}
+
 .grid-container {
   display: grid;
-
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: space-evenly;
-  justify-content: space-around;
-  grid-gap: 20px;
-  background-color: rgb(247, 240, 240);
+  grid-template-columns: 250px 250px 250px;
+  justify-content: space-evenly;
+  grid-gap: 100px;
+  background-color: rgb(226, 222, 222);
   padding: 10px;
 }
 
-table, th, td {
-  border: 1px solid black;
+ .grid-container .score {
+  width: 250px;
+  background-color: white;
+  border: 5px solid #021e3984;
+  padding: 20px;
 }
 
-th, td {
-  padding: 20px;
+table, th, td {
+  border: 1px solid #021e3984;
+  padding: 5px;
 }
 
 .news {
   height: 80vh;
-  border: 1px solid black;
+  border: 1px solid #021e3984;
   background-color: white;
   padding-top: 30px;
   padding-right: 30px;
@@ -143,7 +162,7 @@ th, td {
 }
 
 .team {
-  border: 1px solid black;
+  border: 1px solid #021e3984;
   background-color: rgb(226, 222, 222);
   padding-top: 5px;
   padding-right: 5px;

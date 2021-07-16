@@ -12,8 +12,8 @@ class ScoresContainer extends React.Component {
     render() {
 
         return(
-            <div className="Scores">
-                <Scores scores={this.props.scores}/>
+            <div className="ScoresContainer">
+                <Scores scores={this.props.scores} handleSelect={this.fetchScoresByDate}/>
             </div> 
         )
     }

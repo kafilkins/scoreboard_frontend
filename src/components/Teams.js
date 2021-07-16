@@ -1,24 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
-import RostersContainer from '../containers/RostersContainer'
 
 class Teams extends Component  {
-
-        constructor() {
-        super();
-
-        this.state = {
-        team: ''
-        }
-    }
-
-    handleClick = (e) => {
-        let newTeam = e.target.alt 
-        this.setState({
-             team: newTeam
-        })
-    }
 
     render() { 
         return (
@@ -28,7 +12,7 @@ class Teams extends Component  {
                         {this.props.teams.map((team, key) => {
                             return (
                             <Link to={`/rosters/${team.key}`}><img id={key} className="team" 
-                                onClick={this.handleClick} src={team.logo} alt={team.key} 
+                                 src={team.logo} alt={team.key} 
                                 width="200" height="200"></img>
                             </Link> 
                             )} 
