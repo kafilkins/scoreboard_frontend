@@ -173,3 +173,18 @@ table, th, td {
 .thead {
   background-color: #021e3984;
 }
+
+.about {
+  height: 80vh;
+  border: 1px solid #021e3984;
+  background-color: white;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.me {
+  width: 200px;
+  height: 275px;
+}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 
 class Teams extends Component  {
@@ -25,13 +24,4 @@ class Teams extends Component  {
     }
 } 
 
-const mapStateToProps = state => {
-    return {
-        team: state.team 
-    }
-}
-
-
-export default connect(mapStateToProps)(Teams);
-
-/*<Route path="/rosters" component={Container} />*/
+export default Teams;

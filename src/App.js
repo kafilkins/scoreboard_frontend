@@ -8,6 +8,7 @@ import RostersContainer from './containers/RostersContainer';
 import NavBar from './components/NavBar';
 import { Route } from 'react-router-dom';
 import Footer from './components/Footer';
+import About from './components/About';
 
 class App extends React.Component {
 
@@ -20,6 +21,7 @@ class App extends React.Component {
       <Route path="/scores" component={ScoresContainer} />
       <Route path="/standings" component={StandingsContainer} />
       <Route path="/rosters/:key" component={RostersContainer} />
+      <Route path="/about" component={About} />
       <Footer/>
       </div>
     );
