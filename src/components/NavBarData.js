@@ -8,7 +8,7 @@
      {
         title:"Home",
         icon: <HomeIcon/>,
-        link: '/news'
+        link: '/'
      },
      {
          title: "Teams",

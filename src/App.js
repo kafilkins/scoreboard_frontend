@@ -16,12 +16,12 @@ class App extends React.Component {
     return (
       <div className="App">  
       <NavBar/>
-      <Route path="/teams" component={TeamsContainer} />
-      <Route path="/news" component={NewsContainer} />
-      <Route path="/scores" component={ScoresContainer} />
-      <Route path="/standings" component={StandingsContainer} />
-      <Route path="/rosters/:key" component={RostersContainer} />
-      <Route path="/about" component={About} />
+      <Route exact path="/teams" component={TeamsContainer} />
+      <Route exact path="/" component={NewsContainer} />
+      <Route exact path="/scores" component={ScoresContainer} />
+      <Route exact path="/standings" component={StandingsContainer} />
+      <Route exact path="/rosters/:key" component={RostersContainer} />
+      <Route exact path="/about" component={About} />
       <Footer/>
       </div>
     );
@@ -30,9 +30,4 @@ class App extends React.Component {
 
 export default App;
 
-//<StandingsContainer />
-//      <RostersContainer />,
-//      <NewsContainer />,
-//      <ScoresContainer />,
-//     <TeamsContainer />
 
