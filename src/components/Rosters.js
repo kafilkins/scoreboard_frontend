@@ -14,7 +14,8 @@ const Rosters = (props) => {
                 </thead>
                 <tbody>
                     
-                    {props.rosters.map(roster => <tr><td>{roster.position}</td> 
+                    {props.rosters.map(roster => <tr>
+                                                    <td>{roster.position}</td> 
                                                     <td>{roster.firstname}</td>
                                                     <td>{roster.lastname}</td>
                                                 </tr>)}         
